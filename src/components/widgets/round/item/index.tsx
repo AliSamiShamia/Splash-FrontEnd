@@ -76,7 +76,7 @@ function RoundItem({ title, value, step, action }: RoundItemType) {
         <Grid>
           <IconButton
             onClick={() => {
-              action(value + step);
+              action(parseFloat((value + step).toFixed(2)));
             }}
             aria-label="increase"
             size="small"

@@ -62,7 +62,7 @@ const GuessChart = (props: any) => {
     const addDataPoint = () => {
       if (i <= peakValue) {
         labels.push(i.toFixed(1));
-        const y = Math.exp(i) * 0.01; // Change the formula here
+        const y = Math.exp(i) * 0.01;
 
         data.push(y);
         const guess = i.toFixed(2);
@@ -154,14 +154,14 @@ const GuessChart = (props: any) => {
         options={{
           plugins: {
             legend: {
-              display: false, // Hide legend
+              display: false,
             },
           },
           interaction: {
             intersect: false,
           },
           animation: {
-            duration: 300, // Adjust duration as needed
+            duration: 300, 
             easing: "linear",
 
             onProgress: (animation) => {
